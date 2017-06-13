@@ -1,0 +1,40 @@
+{
+  "name": "logger-aas",
+  "version": "1.0.0",
+  "description": "Logger as a service is an api that accepts requests to store and retrieve your trivial logs.",
+  "main": "server.js",
+  "scripts": {
+    "prod": "node ./server.js",
+    "watch": "nodemon ./server.js",
+    "start": "\"npm run watch\"",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agm-dev/logger-aas.git"
+  },
+  "keywords": [
+    "logger",
+    "aas",
+    "remote logger",
+    "logger as a service"
+  ],
+  "author": "Adrián Gonzalo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agm-dev/logger-aas/issues"
+  },
+  "homepage": "https://github.com/agm-dev/logger-aas#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "mongoose": "4.8.7",
+    "mongoose-mongodb-errors": "0.0.2"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "nodemon": "^1.11.0"
+  }
+}
