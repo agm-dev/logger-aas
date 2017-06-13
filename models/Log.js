@@ -1,5 +1,5 @@
 // Requires:
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 // Schema definition:
 const logSchema = new mongoose.Schema({
@@ -18,6 +18,6 @@ const logSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   }
-});
+})
 
-module.exports = mongoose.model('Log', logSchema);
+module.exports = mongoose.model('Log', logSchema)

@@ -6,7 +6,7 @@ const { catchErrors } = require('../utils/errorHandlers')
 
 // Routes definition:
 router.get('/', (req, res) => {
-  res.send(process.env.APP_NAME || 'app-name');
+  res.send(process.env.APP_NAME || 'app-name')
 })
 
 router.get('/api/v1/logs/:hash', catchErrors(logController.getLogsByHash))
