@@ -1,5 +1,4 @@
 // Requires:
-const mongoose = require('mongoose')
 const Log = require('../models/Log')
 const h = require('../utils/helpers')
 
