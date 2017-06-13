@@ -2,6 +2,9 @@
   "name": "logger-aas",
   "version": "1.0.0",
   "description": "Logger as a service is an api that accepts requests to store and retrieve your trivial logs.",
+  "engines": {
+    "node": ">= 7.6.0"
+  },
   "main": "server.js",
   "scripts": {
     "prod": "node ./server.js",
