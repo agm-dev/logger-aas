@@ -27,6 +27,13 @@ Set new log:
 
 > POST /api/v1/logs {"text": "string", "hash": "yourIdentificatorString"}
 
+An example with cURL:
+```
+curl -X POST \
+  https://logger.assa.services/api/v1/logs \
+  -H 'content-type: application/json' \
+  -d '{"hash": "a-pretty-secret-hash-dude", "text": "This is my most dark secret: I like birds."}'
+```
 Retrieve your logs:
 
 >GET /api/v1/logs/:yourIdentificatorString
