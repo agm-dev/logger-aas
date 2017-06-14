@@ -1,6 +1,8 @@
 # logger-aas
 Logger as a service is an api that accepts requests to store and retrieve your trivial logs.
 
+Use it while you breath at https://logger.assa.services/. Check the usage section for more information on how to use it.
+
 You can clone and run:
 
 >`npm install`
