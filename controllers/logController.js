@@ -33,6 +33,5 @@ exports.indexPage = (req, res, next) => {
 exports.logsView = async (req, res, next) => {
   const hash = req.params.hash
   const logs = await Log.find({ 'hash': hash })
-  console.log(logs)
   res.render('logs', { title: process.env.APP_NAME, hash, logs })
 }
