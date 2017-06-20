@@ -1,0 +1,18 @@
+extends layout
+
+include mixins/_logRow
+
+block content
+  h2 Logs #{hash}
+  .logs
+    table
+      thead
+        tr
+          th Nº
+          th Date
+          th Text
+      tbody
+        - let index = 1
+        each log in logs
+          +logRow(log, index)
+          - index++

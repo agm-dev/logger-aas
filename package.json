@@ -34,7 +34,8 @@
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
     "mongoose": "4.8.7",
-    "mongoose-mongodb-errors": "0.0.2"
+    "mongoose-mongodb-errors": "0.0.2",
+    "pug": "^2.0.0-rc.2"
   },
   "devDependencies": {
     "jest": "^20.0.4",

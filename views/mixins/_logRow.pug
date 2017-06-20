@@ -1,0 +1,7 @@
+mixin logRow(log = {}, rowNumber = 1)
+  - let date = new Date(log.time).toLocaleDateString()
+  - let time = new Date(log.time).toLocaleTimeString()
+  tr
+    td= rowNumber
+    td #{date} #{time}
+    td #{log.text}

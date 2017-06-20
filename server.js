@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
+const path = require('path')
 
 const router = require('./routes/index')
 const errorHandlers = require('./utils/errorHandlers')
@@ -18,6 +19,11 @@ mongoose.connection.on('error', err => {
 
 // Server set up:
 const server = express()
+
+// Views engine setup:
+server.set('views', path.join(__dirname, 'views')) // directory where we place the pug files
+server.set('view engine', 'pug') // pug will be our view's engine
+server.use(express.static(path.join(__dirname, 'public')))
 
 server.use(cors())
 server.use(bodyParser.json())
