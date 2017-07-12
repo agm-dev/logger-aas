@@ -5,7 +5,7 @@
 # 3) Create a logger container like indicated here: docker run -p 127.0.0.1:8001:8001 --link some-mongo --name=logger --restart unless-stopped -e DATABASE='mongodb://user:password@some-mongo:27017' -d assaservice/logger-user
 # 4) Enjoy loggin awesome stuff. It's really important to do it, otherwise you need to start again the previous commands, which may lead to a long iteration until the enjoyment happens. Please contact your shrink if it does not happen shortly.
 
-FROM node:8.1.0
+FROM node:8.1.4
 MAINTAINER Axel Amigo <adamigo@neversyn.com>
 
 #Define the environment variables
